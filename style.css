@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&family=Josefin+Slab:ital,wght@0,200;0,300;1,200&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&family=Josefin+Slab:ital,wght@0,200;0,300;1,200&family=Xanh+Mono:ital@0;1&display=swap");
+
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Xanh Mono', monospace; */
+
+* {
+  background-color: rgb(244, 241, 234);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Josefin Slab", serif;
+}
+a {
+  text-decoration: none !important;
+}
+.navbar-logo {
+  display: inline-block !important;
+}
+.navbar-img {
+  max-width: 100%;
+}
+.navbar-menu a {
+  color: black;
+  font-size: x-large;
+}
+.navbar-menu a:hover {
+  font-style: italic;
+}
+
+.navbar .h1block {
+  text-align: center !important;
+  font-size: 550%;
+}
+
+.homepage-hero {
+  padding-top: 50px;
+}
+.h2block h2 {
+  font-size: 400%;
+}
+.large-tag {
+  position: relative;
+}
+
+.large-tag h2 {
+  border: 1px solid;
+  margin: 0 !important;
+  border-radius: 3px;
+  border-inline: 10px;
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 2s ease infinite alternate; /* fadeIn adlı animasyon*/
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Başlangıçta görünmez (opacity 0) */
+  }
+  100% {
+    opacity: 1; /* Sonunda görünür (opacity 1) */
+  }
+}
+
+.large-tag.back-end h2 {
+  animation-delay: 1s;
+}
